@@ -4,14 +4,14 @@
 
     /*colores*/
     --bg-color: #1a805b;
-    --text-primary: #ee991a;
+    --text-primary: #ff4f6f;
 
     /* tipografia */
-    --body-font: 'Poppins', sans-serif;
-    --big-font-size: 32px;
-    --normal-font-size: 16px;
-    --small-font-size: 14px;
-    --smaller-font-size: 12px;
+    --body-font: 'Rubik', sans-serif;
+    --big-font-size: 50px;
+    --normal-font-size: 32px;
+    --small-font-size: 18px;
+    --smaller-font-size: 16px;
 
     /*Grosores de la fuente*/
     --font-medium: 400;
@@ -83,8 +83,10 @@ img {
 }
 
 .section__title {
-    text-align: center;
-    margin: var(--mr-3) 0;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    color: var(--text-primary);
 }
 
 .grid--container {
@@ -185,12 +187,6 @@ img {
     row-gap: 1rem;
 }
 
-/*
-.navbar__item {
-    margin-bottom: var(--mr-2);
-} 
-*/
-
 .navbar__link {
     color: #111;
     font-size: 1.2rem;
@@ -237,15 +233,17 @@ img {
     color: #111;
 }
 
-.home__title,
+
 .home__description {
-    text-align: center;
+    font-size: 3rem;
+    text-align: left;
+
 }
 
 .home__title {
-    margin: 0;
-    margin-bottom: var(--mr-2);
-    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: left;
+    color: #ff4f6f;
 }
 
 .home__buttons {
@@ -255,7 +253,7 @@ img {
 /* ========== ABOUT  ============ */
 
 .about {
-    background-color: #777;
+    background-color: rgb(222, 222, 222);
 }
 
 .about__description {
@@ -280,17 +278,11 @@ img {
 
 }
 
-.about__card .bx {
-    padding: 12px;
-    font-size: 2rem;
-    border-radius: 50%;
-    background-color: #777;
-}
-
 .about__tags-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+
 }
 
 .about__tag {
@@ -298,8 +290,13 @@ img {
     padding: .75rem 1.5rem;
     font-size: var(--smaller-font-size);
     font-weight: var(--font-semi-bold);
-    background-color: rgb(94, 80, 80);
+    background-color: rgb(148, 148, 148);
     border-radius: 5px;
+}
+
+.about__tags-title {
+    text-transform: uppercase;
+    color: var(--text-primary);
 }
 
 /* ========== PROJECTS  ============ */
@@ -471,11 +468,11 @@ img {
 
     .home__title {
         margin-top: 2rem;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .home__description {
-        font-size: 1.3rem;
+        font-size: 3rem;
     }
 
     .home__social-link {
